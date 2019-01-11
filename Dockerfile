@@ -11,6 +11,7 @@ RUN \
         build-essential \
         cpanminus \
         dos2unix \
+        libapache2-mod-fcgid \
         libapache2-mod-perl2 \
         libapache2-mod-perl2-dev \
         libapreq2-dev \
@@ -20,10 +21,10 @@ RUN \
         libssl-dev \
         libxml2-dev \
         ssl-cert \
-        zip && \
+        zip \
         zlib1g \
         zlib1g-dev \
-        zlibc \
+        zlibc && \
     cpanm Carton && \
     a2enmod cgid && \
     a2enmod rewrite && \
