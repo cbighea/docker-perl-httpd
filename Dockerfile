@@ -4,25 +4,26 @@ RUN \
     DEBIAN_FRONTEND=noninteractive && \
     apt-get update && \
     apt-get install -yq \
-        build-essential \
-        apt-utils \
-        ssl-cert \
         apache2 \
-        apache2-utils \
         apache2-dev \
+        apache2-utils \
+        apt-utils \
+        build-essential \
+        cpanminus \
+        dos2unix \
         libapache2-mod-perl2 \
         libapache2-mod-perl2-dev \
-        libcgi-pm-perl \
-        liblocal-lib-perl \
-        cpanminus \
-        libxml2-dev \
-        libexpat1-dev \
-        libssl-dev \
         libapreq2-dev \
-        zlibc \
+        libcgi-pm-perl \
+        libexpat1-dev \
+        liblocal-lib-perl \
+        libssl-dev \
+        libxml2-dev \
+        ssl-cert \
+        zip && \
         zlib1g \
         zlib1g-dev \
-        zip && \
+        zlibc \
     cpanm Carton && \
     a2enmod cgid && \
     a2enmod rewrite && \
