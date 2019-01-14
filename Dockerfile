@@ -20,6 +20,7 @@ RUN \
         liblocal-lib-perl \
         libssl-dev \
         libxml2-dev \
+        mysql-client \
         ssl-cert \
         zip \
         zlib1g \
